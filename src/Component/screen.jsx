@@ -33,8 +33,15 @@ function Screen() {
           </a>
         </li>
       </ul>
-      <div class="nav justify-content-center mt-2">
-        <Mask />
+      <div class="nav justify-content-center mt-2 scene">
+        <div onClick={handleflip} className={flip ? "card is-flipped" : "card"}>
+          <div className="side front">
+            <Mask />
+          </div>
+          <div className="side back">
+            <Mask />
+          </div>
+        </div>
       </div>
       <div class="d-flex align-items-center justify-content-center  mt-2">
         <Vectortwo />
